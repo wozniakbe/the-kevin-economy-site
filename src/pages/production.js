@@ -20,7 +20,7 @@ const ProductionPage = ({ data }) => {
                     <th>ROI%</th>
                 </tr>
                 {
-                    data.allGooglePlayersSheet.nodes.map((node) => (
+                    data.allGooglePlayers2021Sheet.nodes.map((node) => (
                         <tr key={node.player}>
                             <th>{node.player}</th>
                             <td>{node.pos}</td>
@@ -40,7 +40,7 @@ const ProductionPage = ({ data }) => {
 
 export const query = graphql`
         query {
-            allGooglePlayersSheet {
+            allGooglePlayers2021Sheet {
             nodes {
                 player
                 pos
