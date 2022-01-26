@@ -1,7 +1,10 @@
 .container {
     margin: auto;
     max-width: 650px;
-    font-family: sans-serif;
+  }
+
+  body {
+    font-family: "Roboto";
   }
   
   .heading {
