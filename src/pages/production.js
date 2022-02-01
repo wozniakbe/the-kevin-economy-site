@@ -2,13 +2,15 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
+import SortableTable from '../components/sortable-table/sortable-table'
 
 // imports
 
 const ProductionPage = ({ data }) => {
     return (
         <Layout pageTitle="The Kevin - Player Production Values">
-            <table>
+            <SortableTable data={data.allGooglePlayers2021Sheet.nodes} />
+            {/* <table>
                 <tr>
                     <th>Name</th>
                     <th>POS</th>
@@ -33,7 +35,7 @@ const ProductionPage = ({ data }) => {
                         </tr>
                     ))
                 }
-            </table>
+            </table> */}
         </Layout>
     )
 }
@@ -42,6 +44,7 @@ export const query = graphql`
         query {
             allGooglePlayers2021Sheet {
             nodes {
+                id
                 player
                 pos
                 team
