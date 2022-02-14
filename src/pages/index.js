@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import LeagueEvents from '../components/league-events/league-events';
 
 const IndexPage = () => {
   return (
@@ -9,7 +10,11 @@ const IndexPage = () => {
       <StaticImage
         alt="Traffic Cone"
         src="../images/traffic-cone.png"
+        placeholder="blurred"
+        layout="fullWidth"
       />
+      <br />
+      <LeagueEvents />
     </Layout>
   )
 }
