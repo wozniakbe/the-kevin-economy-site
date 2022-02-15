@@ -98,19 +98,19 @@ const SortableTable = (props) => {
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('produced')}
-                            className={getClassNamesFor('produced')}
+                            onClick={() => requestSort('salary')}
+                            className={getClassNamesFor('salary')}
                         >
-                            Produced
+                            Salary
                         </button>
                     </th>
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('salary')}
-                            className={getClassNamesFor('salary')}
+                            onClick={() => requestSort('produced')}
+                            className={getClassNamesFor('produced')}
                         >
-                            Salary
+                            Produced
                         </button>
                     </th>
                     <th>
