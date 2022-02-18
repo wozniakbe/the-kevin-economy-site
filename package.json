@@ -22,10 +22,14 @@
     "gatsby-plugin-manifest": "^4.5.2",
     "gatsby-plugin-mdx": "^3.5.2",
     "gatsby-plugin-sharp": "^4.5.2",
+    "gatsby-plugin-typography": "^4.7.0",
     "gatsby-source-filesystem": "^4.5.2",
     "gatsby-source-google-spreadsheets": "^3.0.8",
     "gatsby-transformer-sharp": "^4.6.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-typography": "^0.16.20",
+    "typography": "^0.16.21",
+    "typography-theme-ocean-beach": "^0.16.19"
   }
 }
