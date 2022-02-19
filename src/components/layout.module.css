@@ -1,34 +1,43 @@
 .container {
   margin: auto;
-    max-width: 750px;
-  }
+  max-width: 800px;
+}
 
-  body {
-    padding: 0 0.5rem;
-  }
-  
-  .heading {
-    color: rebeccapurple;
-    margin: 3rem 0;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
-  nav {
-    text-align: center;
-    margin: 0 auto;
-    display: table;
-  }
+main {
+  padding: 0 0.5rem;
+}
+
+.heading {
+  color: rebeccapurple;
+  margin: 2rem 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: auto;
+}
+
+.nav-link-item {
+  padding-right: 2rem;
+}
+
+.nav-link-text {
+  color: black;
+  text-shadow: none;
+  background-image: none;
+  text-decoration: underline;
+}
+
+nav {
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}
+
 .site-title {
-    color: gray;
-    margin: 0;
-    text-align: center;
-  }
+  color: gray;
+  margin: 0;
+  text-align: center;
+}
