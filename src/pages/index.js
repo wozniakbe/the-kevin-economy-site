@@ -9,7 +9,7 @@ const IndexPage = () => {
       <p>A static site with calculated financials for "The Kevin" salary cap fantasy football league.</p>
       <StaticImage
         alt="Traffic Cone"
-        src="../images/traffic-cone.png"
+        src="../images/beast_money.png"
         placeholder="blurred"
         layout="fullWidth"
       />
