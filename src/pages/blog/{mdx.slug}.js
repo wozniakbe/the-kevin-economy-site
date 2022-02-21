@@ -12,7 +12,7 @@ const BlogPost = ({ data }) => {
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
-      />
+      /><br/><br/>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
