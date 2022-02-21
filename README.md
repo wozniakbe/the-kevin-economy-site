@@ -13,6 +13,7 @@
 ### Enhancements
 - Theming
 - Fix percentages display
+- Remove horizontal scroll on mobile
 ### Blogs?
 - How $ is produced on the site
 - Rookie Review
