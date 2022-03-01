@@ -10,32 +10,7 @@ const ProductionPage = ({ data }) => {
     return (
         <Layout pageTitle="The Kevin - Player Production Values">
             <SortableTable data={data.allGooglePlayers2021Sheet.nodes} />
-            {/* <table>
-                <tr>
-                    <th>Name</th>
-                    <th>POS</th>
-                    <th>Team</th>
-                    <th>Franchise</th>
-                    <th>Produced</th>
-                    <th>Salary</th>
-                    <th>Returned</th>
-                    <th>ROI%</th>
-                </tr>
-                {
-                    data.allGooglePlayers2021Sheet.nodes.map((node) => (
-                        <tr key={node.player}>
-                            <th>{node.player}</th>
-                            <td>{node.pos}</td>
-                            <td>{node.team}</td>
-                            <td>{node.franchise}</td>
-                            <td>{node.produced}</td>
-                            <td>{node.salary}</td>
-                            <td>{node.returned}</td>
-                            <td>{node.roi}</td>
-                        </tr>
-                    ))
-                }
-            </table> */}
+            <p><em>Return values for players with a $0 salary is broken</em></p>
         </Layout>
     )
 }
