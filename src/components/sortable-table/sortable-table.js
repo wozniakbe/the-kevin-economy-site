@@ -62,8 +62,8 @@ const SortableTable = (props) => {
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('player')}
-                            className={getClassNamesFor('player')}
+                            onClick={ () => requestSort('player') }
+                            className={ getClassNamesFor('player') }
                         >
                             Player
                         </button>
@@ -71,8 +71,8 @@ const SortableTable = (props) => {
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('pos')}
-                            className={getClassNamesFor('pos')}
+                            onClick={ () => requestSort('pos') }
+                            className={ getClassNamesFor('pos') }
                         >
                             POS
                         </button>
@@ -98,8 +98,8 @@ const SortableTable = (props) => {
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('salary')}
-                            className={getClassNamesFor('salary')}
+                            onClick={ () => requestSort('salary') }
+                            className={ getClassNamesFor('salary') }
                         >
                             Salary
                         </button>
@@ -116,8 +116,8 @@ const SortableTable = (props) => {
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('returned')}
-                            className={getClassNamesFor('returned')}
+                            onClick={ () => requestSort('returned') }
+                            className={ getClassNamesFor('returned') }
                         >
                             Return
                         </button>
@@ -134,18 +134,18 @@ const SortableTable = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {items.map((item) => (
-                    <tr key={item.id}>
-                        <td>{item.player}</td>
-                        <td>{item.pos}</td>
+                { items.map((item) => (
+                    <tr key={ item.id }>
+                        <td>{ item.player }</td>
+                        <td>{ item.pos }</td>
                         {/* <td>{item.team}</td>
                         <td>{item.franchise}</td> */}
-                        <td>${item.salary}</td>
-                        {/* <td>${item.produced}</td> */}
-                        <td>${item.returned}</td>
-                        {/* <td>{item.roi}%</td> */}
+                        <td>${ item.salary }</td>
+                        {/* <td>${item.produced}</td> */ }
+                        <td>${ item.returned }</td>
+                        {/* <td>{item.roi}%</td> */ }
                     </tr>
-                ))}
+                )) }
             </tbody>
         </table>
     );

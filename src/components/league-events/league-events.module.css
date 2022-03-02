@@ -1,0 +1,8 @@
+.league-event-header {
+    width: 50% !important;
+}
+
+.league-event-data {
+    width: 50% !important;
+    white-space: nowrap;
+}

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/layout'
 import SortableTable from '../components/sortable-table/sortable-table'
 import RookieTable2021 from '../components/player-tables/rookie-table-2021'
@@ -12,7 +11,7 @@ const ProductionPage = ({ data }) => {
         <Layout pageTitle="The Kevin - Top Earners">
             <div>
                 <caption>Top Paid Players</caption>
-                <SortableTable data={data.allGoogle2021TopPaidSheet.nodes} />
+                <SortableTable data={ data.allGoogle2021TopPaidSheet.nodes } />
             </div>
             <div>
                 <caption>Top Paid Rookies</caption>

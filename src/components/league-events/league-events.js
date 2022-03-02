@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby'
-// import './styles.css';
+import { leagueEventHeader, leagueEventData } from './league-events.module.css';
 
 const LeagueEvents = (props) => {
     const data = useStaticQuery(graphql`
@@ -17,21 +17,21 @@ const LeagueEvents = (props) => {
         <table>
             <thead>
                 <tr>
-                    <th>
+                    <th className={ leagueEventHeader }>
                         Date
                     </th>
-                    <th>
+                    <th className={ leagueEventHeader }>
                         Event
                     </th>
                 </tr>
             </thead>
             <tbody>
-                {data.allGoogleLeagueCalendar2022Sheet.nodes.map((item) => (
-                    <tr key={item.date}>
-                        <td>{item.date}</td>
-                        <td>{item.event}</td>
+                { data.allGoogleLeagueCalendar2022Sheet.nodes.map((item) => (
+                    <tr key={ item.date }>
+                        <td className={ leagueEventData }>{ item.date }</td>
+                        <td className={ leagueEventData }>{ item.event }</td>
                     </tr>
-                ))}
+                )) }
             </tbody>
         </table>
     );
