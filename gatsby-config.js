@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `\"The Kevin\" Economy`,
+        title: `\"The Kevin\" Economist`,
         siteUrl: `https://www.yourdomain.tld`,
     },
     plugins: [
