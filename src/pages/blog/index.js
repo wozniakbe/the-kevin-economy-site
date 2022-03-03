@@ -7,13 +7,14 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="Blog Posts">
       {
         data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/blog/${node.slug}`}>
-                {node.frontmatter.title}
+          <article key={ node.id }>
+            <h3>
+              <Link to={ `/blog/${node.slug}` }>
+                { node.frontmatter.title }
               </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
+            </h3>
+            { node.timeToRead == '1' ? <p>Posted: { node.frontmatter.date }<br />Reading time: { node.timeToRead } minute</p> : <p>Posted: { node.frontmatter.date }<br />Reading time: { node.timeToRead } minutes</p> }
+            <hr />
           </article>
         ))
       }
@@ -31,6 +32,7 @@ export const query = graphql`
         }
         id
         slug
+        timeToRead
       }
     }
   }

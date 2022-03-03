@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.module.css';
 
 // credit: https://www.smashingmagazine.com/2020/03/sortable-tables-react/
 const useSortableData = (items, config = null) => {
@@ -62,22 +62,22 @@ const SortableTable = (props) => {
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('player')}
-                            className={getClassNamesFor('player')}
+                            onClick={ () => requestSort('player') }
+                            className={ getClassNamesFor('player') }
                         >
-                            Name
+                            Player
                         </button>
                     </th>
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('pos')}
-                            className={getClassNamesFor('pos')}
+                            onClick={ () => requestSort('pos') }
+                            className={ getClassNamesFor('pos') }
                         >
                             POS
                         </button>
                     </th>
-                    <th>
+                    {/* <th>
                         <button
                             type="button"
                             onClick={() => requestSort('team')}
@@ -94,17 +94,17 @@ const SortableTable = (props) => {
                         >
                             Franchise
                         </button>
-                    </th>
+                    </th> */}
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('salary')}
-                            className={getClassNamesFor('salary')}
+                            onClick={ () => requestSort('salary') }
+                            className={ getClassNamesFor('salary') }
                         >
                             Salary
                         </button>
                     </th>
-                    <th>
+                    {/* <th>
                         <button
                             type="button"
                             onClick={() => requestSort('produced')}
@@ -112,17 +112,17 @@ const SortableTable = (props) => {
                         >
                             Produced
                         </button>
-                    </th>
+                    </th> */}
                     <th>
                         <button
                             type="button"
-                            onClick={() => requestSort('returned')}
-                            className={getClassNamesFor('returned')}
+                            onClick={ () => requestSort('returned') }
+                            className={ getClassNamesFor('returned') }
                         >
-                            Returned
+                            Return
                         </button>
                     </th>
-                    <th>
+                    {/* <th>
                         <button
                             type="button"
                             onClick={() => requestSort('roi')}
@@ -130,22 +130,22 @@ const SortableTable = (props) => {
                         >
                             ROI
                         </button>
-                    </th>
+                    </th> */}
                 </tr>
             </thead>
             <tbody>
-                {items.map((item) => (
-                    <tr key={item.id}>
-                        <td>{item.player}</td>
-                        <td>{item.pos}</td>
-                        <td>{item.team}</td>
-                        <td>{item.franchise}</td>
-                        <td>${item.produced}</td>
-                        <td>${item.salary}</td>
-                        <td>${item.returned}</td>
-                        <td>{item.roi}%</td>
+                { items.map((item) => (
+                    <tr key={ item.id }>
+                        <td>{ item.player }</td>
+                        <td>{ item.pos }</td>
+                        {/* <td>{item.team}</td>
+                        <td>{item.franchise}</td> */}
+                        <td>${ item.salary }</td>
+                        {/* <td>${item.produced}</td> */ }
+                        <td>${ item.returned }</td>
+                        {/* <td>{item.roi}%</td> */ }
                     </tr>
-                ))}
+                )) }
             </tbody>
         </table>
     );
