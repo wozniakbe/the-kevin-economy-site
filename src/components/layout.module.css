@@ -3,6 +3,12 @@
   max-width: 800px;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  padding-right: 0.5rem;
+}
+
 main {
   padding: 0 0.5rem;
 }
@@ -21,7 +27,7 @@ main {
 }
 
 .nav-link-item {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 .nav-link-text {
@@ -35,6 +41,7 @@ nav {
   text-align: center;
   margin: 0 auto;
   display: table;
+  padding-right: 1rem;
 }
 
 .site-title {
