@@ -1,58 +1,59 @@
 .container {
-  margin: auto;
-  max-width: 800px;
+    margin: auto;
+    max-width: 800px;
 }
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  padding-right: 0.5rem;
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    padding-right: 0.5rem;
 }
 
 main {
-  padding: 0 0.5rem;
+    padding: 0 0.5rem;
+}
+
+p {
+    padding-right: 0.58rem;
 }
 
 .heading {
-  color: rgb(8, 83, 27);
-  margin: 2rem 0;
-  text-transform: uppercase;
+    color: rgb(8, 83, 27);
+    margin: 2rem 0;
+    text-transform: uppercase;
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: auto;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: auto;
 }
 
 .nav-link-item {
-  padding-right: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .nav-link-text {
-  color: black;
-  text-shadow: none;
-  background-image: none;
-  text-decoration: underline;
+    color: black;
+    text-shadow: none;
+    background-image: none;
+    text-decoration: underline;
 }
 
 nav {
-  text-align: center;
-  margin: 0 auto;
-  display: table;
-  padding-right: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    padding-right: 1rem;
 }
 
 .site-title {
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
 }
-
-
-
-
 
 table>thead,
 table>tbody,
@@ -60,35 +61,35 @@ table>thead>tr,
 table>tbody>tr,
 table>thead>tr>th,
 table>tbody>tr>td {
-  display: block;
+    display: block;
 }
 
 table>tbody>tr:after,
 table>thead>tr:after {
-  content: ' ';
-  display: block;
-  visibility: hidden;
-  clear: both;
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
 }
 
 table>tbody {
-  overflow-y: auto;
-  height: 300px;
+    overflow-y: auto;
+    height: 300px;
 }
 
 table>tbody>tr>td:first-child,
 table>thead>tr>th:first-child {
-  width: 40%;
-  float: left;
-  white-space: nowrap;
+    width: 40%;
+    float: left;
+    white-space: nowrap;
 }
 
 table>tbody>tr>td,
 table>thead>tr>th {
-  width: 20%;
-  float: left;
+    width: 20%;
+    float: left;
 }
 
 table>thead>tr>th {
-  white-space: nowrap;
+    white-space: nowrap;
 }

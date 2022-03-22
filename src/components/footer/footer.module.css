@@ -1,0 +1,22 @@
+.custom-footer {
+    font-size: 75%;
+    padding: 0.5rem;
+    width: 95%;
+}
+
+.footer-p {
+    padding-left: 0.5rem;
+    margin: 0;
+}
+
+.footer-hr {
+    margin: 0;
+}
+
+.footer-text-div {
+    display: flex;
+}
+
+a {
+    background-image: none;
+}

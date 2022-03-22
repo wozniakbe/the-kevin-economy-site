@@ -8,6 +8,7 @@ import {
     navLinkText,
     siteTitle,
 } from './layout.module.css'
+import Footer from './footer/footer'
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -52,6 +53,7 @@ const Layout = ({ pageTitle, children }) => {
                 <h2 className={ heading }>{ pageTitle }</h2>
                 { children }
             </main>
+            <Footer />
         </div>
     )
 }
