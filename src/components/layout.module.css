@@ -70,7 +70,7 @@ table>thead>tr:after {
 
 table>tbody {
     overflow-y: auto;
-    height: 300px;
+    max-height: 300px;
 }
 
 table>tbody>tr>td:first-child,
