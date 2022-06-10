@@ -17,8 +17,6 @@
 ### Blogs?
 - How $ is produced on the site
 - Determining value over 4-5 years
-- Rookie Review
-  - Take the dynasty mocks from 2021, apply wage scale, compare to our salaries and production
 - Case Study: how much money can a team's position group earn? CIN WR, all of KC
 - Surprise contract reviews: Wentz, Boyd, Tee Higgins
 - Reusable Markdown table component for data
