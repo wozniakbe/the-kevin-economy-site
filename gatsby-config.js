@@ -32,19 +32,19 @@ module.exports = {
             resolve: 'gatsby-source-google-spreadsheets',
             options: {
                 spreadsheetId: '1_ZnC3_F6QmD32NvdjlMhId3qDt9ABrFVjCdEOYEunG8',
-                credentials: {
-                    type: 'service_account',
-                    project_id: process.env.PROJECT_ID,
-                    private_key_id: process.env.PRIVATE_KEY_ID,
-                    private_key: process.env.PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
-                    client_email: process.env.CLIENT_EMAIL,
-                    client_id: process.env.CLIENT_ID,
-                    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
-                    token_uri: 'https://oauth2.googleapis.com/token',
-                    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
-                    client_x509_cert_url: process.env.CLIENT_X509_CERT_URL,
-                }
-                // credentials: require('./credentials.json')
+                // credentials: {
+                //     type: 'service_account',
+                //     project_id: process.env.PROJECT_ID,
+                //     private_key_id: process.env.PRIVATE_KEY_ID,
+                //     private_key: process.env.PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
+                //     client_email: process.env.CLIENT_EMAIL,
+                //     client_id: process.env.CLIENT_ID,
+                //     auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+                //     token_uri: 'https://oauth2.googleapis.com/token',
+                //     auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+                //     client_x509_cert_url: process.env.CLIENT_X509_CERT_URL,
+                // }
+                credentials: require('./credentials.json')
             }
         },
         "gatsby-transformer-sharp",
